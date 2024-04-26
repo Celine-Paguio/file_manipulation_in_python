@@ -6,8 +6,14 @@ with open("integers.txt", "r") as integers_file:
     integers = integers_file.read().splitlines()
 # Convert string to integer
     integers = [int(num) for num in integers]
-    print(integers)
 # Categorize the integers to even or odd
+for num in integers:
+    if num %2 == 0:
+        even_numbers = num
+        # print(even_numbers)
+    else:
+        odd_numbers = num
+        print(odd_numbers)
 # Write even numbers to even.txt
 # Write odd numbers to odd.txt
 # Determine the square of even numbers
