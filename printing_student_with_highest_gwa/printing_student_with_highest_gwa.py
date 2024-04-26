@@ -8,5 +8,7 @@ with open("students.bin", "rb") as file:
     students = pickle.load(file)
 # Determine the student with the highest GWA
 highest_student = min(students, key=students.get)
-print(highest_student)
+# Determine the GWA of the highest student
+highest_gwa = students[highest_student]
+print(highest_gwa)
 # Print the student with the highest GWA
