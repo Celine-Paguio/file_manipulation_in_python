@@ -25,5 +25,6 @@ with open("double.txt", "a") as double_file:
 # Write odd integers to odd.txt
             with open("odd.txt", "a") as odd_file:
                 odd_file.write(str(odd_integers)+"\n")
-
 # Write the cube of odd integers to triple.txt
+            with open("triple.txt", "a") as triple_file:
+                triple_file.write(str(cube_of_odd)+"\n")
