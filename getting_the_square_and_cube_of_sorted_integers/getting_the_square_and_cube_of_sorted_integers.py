@@ -7,14 +7,14 @@ with open("integers.txt", "r") as integers_file:
 # Convert string to integer
     integers = [int(num) for num in integers]
 # Categorize the integers to even or odd
-for num in integers:
-    if num %2 == 0:
-        even_numbers = num
-        # print(even_numbers)
-    else:
-        odd_numbers = num
-        print(odd_numbers)
 # Write even numbers to even.txt
+with open("even.txt", "a") as even_file:
+    for num in integers:
+        if num %2 == 0:
+            even_numbers = num
+            even_file.write(str(even_numbers) + "\n")
+        else:
+            odd_numbers = num
 # Write odd numbers to odd.txt
 # Determine the square of even numbers
 # Determine the cube of odd numbers
