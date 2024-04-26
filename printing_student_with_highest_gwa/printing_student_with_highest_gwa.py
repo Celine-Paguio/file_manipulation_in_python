@@ -6,6 +6,7 @@ import pickle
 with open("students.bin", "rb") as file:
 # Load the students dictionary
     students = pickle.load(file)
-    print(students)
 # Determine the student with the highest GWA
+highest_student = min(students, key=students.get)
+print(highest_student)
 # Print the student with the highest GWA
