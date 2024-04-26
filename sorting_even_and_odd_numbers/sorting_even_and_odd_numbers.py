@@ -6,14 +6,15 @@ with open("numbers.txt", 'r') as numbers_file:
     numbers = numbers_file.read().splitlines()
 # Convert string to integers
     numbers = [int(num) for num in numbers]
-    print(numbers)
+
 # Categorize the numbers as even or odd
-for num in numbers:
-    if num %2 == 0:
-        even_numbers = num
-        # print(even_numbers)
-    else:
-        odd_numbers = num
-        print(odd_numbers)
 # Write even numbers to even.txt
+with open("even.txt", "a") as even_file:
+    for num in numbers:
+        if num %2 == 0:
+            even_numbers = num
+            even_file.write(str(even_numbers) + "\n")
+        else:
+            odd_numbers = num
+
 # Write odd numbers to odd.txt
