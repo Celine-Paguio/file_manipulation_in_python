@@ -28,3 +28,7 @@ with open("double.txt", "a") as double_file:
 # Write the cube of odd integers to triple.txt
             with open("triple.txt", "a") as triple_file:
                 triple_file.write(str(cube_of_odd)+"\n")
+# Print a message to notify the user that the program is done
+print('Even and odd numbers from "integers.txt" have been categorized and necessary operations have been performed. You can check "double.txt" for the square of even numbers and "triple.txt" for the cube of odd numbers.')
+    
+# End of Program
