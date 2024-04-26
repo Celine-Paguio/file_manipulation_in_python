@@ -19,3 +19,7 @@ with open("even.txt", "a") as even_file:
 # Write odd numbers to odd.txt
             with open("odd.txt", "a") as odd_file:
                 odd_file.write(str(odd_numbers)+"\n")
+# Print a message to notify the user that the program is done
+print ('Even and odd numbers from "numbers.txt" have been sorted. You can check "even.txt" and "odd.txt" for the results.')
+
+# End of program
