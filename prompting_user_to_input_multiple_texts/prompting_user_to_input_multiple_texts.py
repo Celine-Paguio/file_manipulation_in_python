@@ -2,7 +2,7 @@
 
 # Start of program
 # Create a file named my_file.txt
-with open("my_file.txt", "w") as my_file:
+with open("my_file.txt", "a") as my_file:
 # Ask the user for input
     while True:
         line = input("Enter line: ")
@@ -12,5 +12,8 @@ with open("my_file.txt", "w") as my_file:
         if more_lines.lower() == "y":
             continue
         else:
-            break
 # Print a message once the user don't want to add more lines or if they entered an incorrect key
+            print("The program identified that you don't want to try again or you may have entered an invalid key. The program will close now. Thank you!")
+            break
+
+# End of program
