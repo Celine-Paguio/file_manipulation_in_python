@@ -4,8 +4,9 @@
 # Read numbers.txt file
 with open("numbers.txt", 'r') as numbers_file:
     numbers = numbers_file.read().splitlines()
-    print(numbers)
 # Convert string to integers
+    numbers = [int(num) for num in numbers]
+    print(numbers)
 # Categorize the numbers as even or odd
 # Write even numbers to even.txt
 # Write odd numbers to odd.txt
