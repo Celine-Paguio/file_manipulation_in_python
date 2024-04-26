@@ -7,16 +7,21 @@ with open("integers.txt", "r") as integers_file:
 # Convert string to integer
     integers = [int(num) for num in integers]
 # Categorize the integers to even or odd
-# Write even numbers to even.txt
+# Write even integers to even.txt
 with open("even.txt", "a") as even_file:
     for num in integers:
         if num %2 == 0:
-            even_numbers = num
-            even_file.write(str(even_numbers) + "\n")
+            even_integers = num
+# Determine the square of even integers
+            square_of_even = (even_integers ** 2)
+            print(square_of_even)
+            even_file.write(str(even_integers) + "\n")
         else:
-            odd_numbers = num
-# Write odd numbers to odd.txt
-# Determine the square of even numbers
-# Determine the cube of odd numbers
-# Write the square of even numbers to double.txt
-# Write the cube of odd numbers to triple.txt
+            odd_integers = num
+# Write odd integers to odd.txt
+            with open("odd.txt", "a") as odd_file:
+                odd_file.write(str(odd_integers)+"\n")
+# Determine the square of even integers
+# Determine the cube of odd integers
+# Write the square of even integers to double.txt
+# Write the cube of odd integers to triple.txt
